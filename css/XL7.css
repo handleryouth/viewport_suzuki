@@ -1,3 +1,85 @@
+/*booking form*/
+.booking-car-form{
+  padding: 1rem 0 2rem 0;
+  background-color:white;
+  position: sticky;
+  top: 90px;
+  z-index: 3;
+  max-width:450px;
+  width:100%;
+  margin: 0 auto;
+}
+
+.form-header{
+  display:flex;
+  align-items:center;
+  justify-content: space-between;
+}
+
+.fa-times{
+  margin-left: 1rem;
+}
+
+
+.form-header h3{
+  flex-basis:65%;
+}
+
+.form{
+  margin:2rem;
+}
+
+
+.form-name input[type=text], .form-email input[type=email], .form-number input[type=number]{
+  width:99%;
+  height:2rem;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1.5px solid #E5E9F2;
+}
+
+.form-car{
+  display:flex;
+}
+
+.form-type2{
+  margin-left: 2rem;
+}
+
+.form-type1 select, .form-type2 select{
+  height:2rem;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1.5px solid #E5E9F2;
+}
+
+.form-button{
+  display:flex;
+  justify-content:space-around;
+}
+
+.form-button-1, .form-button-2{
+  width:40%;
+  font-size: 1rem;
+  padding: 0.8rem;
+  border: none;
+}
+
+.form-button-1{
+  color: rgba(22, 60, 128, 1);
+  background-color:white;
+}
+
+.form-button-2{
+  color: #fff;
+  background-color:rgba(22, 60, 128, 1);
+}
+
+/*booking form*/
+
+
 /*booking car container*/
 .booking-car-container {
   display: flex;
@@ -67,6 +149,7 @@
 .overview-slideshow {
   background-color: rgba(22, 60, 128, 1);
 }
+
 
 .XL7-banner {
   width: 100%;

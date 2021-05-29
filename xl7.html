@@ -6,10 +6,6 @@
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
-  <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
-
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
   <link rel="stylesheet" href="css/universal.css">
@@ -20,7 +16,65 @@
 
 <body>
 
+  <!--Booking car form-->
+  <div class="booking-car-form notshowed">
+    <div class="form-header">
+      <i class="fas fa-times"></i>
+      <h3>Booking Mobil</h3>
+    </div>
 
+    <div class="form">
+      <div class="form-name">
+        <p>Nama Lengkap</p>
+        <input type="text">
+      </div>
+
+      <div class="form-email">
+        <p>Email</p>
+        <input type="email">
+      </div>
+
+      <div class="form-number">
+        <p>No. Handphone</p>
+        <input type="number">
+      </div>
+
+      <div class="form-car">
+        <div class="form-type1">
+          <p>Mobil</p>
+          <select>
+            <option>XL7</option>
+            <option>Ertiga</option>
+            <option>All New Ertiga Sport</option>
+            <option>New Ignis</option>
+            <option>Karimun</option>
+          </select>
+        </div>
+
+        <div class="form-type2">
+          <p>Tipe</p>
+          <select>
+            <option>ZETA M/T</option>
+            <option>ZETA A/T</option>
+            <option>BETA M/T</option>
+            <option>BETA A/T</option>
+            <option>ALPHA M/T</option>
+            <option>ALPHA A/T</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+  <div class="form-button">
+    <button class="form-button-1" type="button" name="button">Batal</button>
+    <button class="form-button-2" type="button" name="button">KIRIM</button>
+  </div>
+
+
+
+  </div>
+
+<!--booking car form-->
 
   <!--navigation bar-->
 
@@ -64,7 +118,53 @@
 
     <div class="overview">
       <div class="overview-slideshow">
-        <img class="XL7-banner" src="image/XL7/Xl7.png" alt="XL 7 Banner" width="375" height="316">
+
+
+        <!-- Slider main container -->
+      <div class="swiper-container">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide"><img class="XL7-banner" src="image/XL7/Xl7.png" alt="XL 7 Banner"></div>
+          <div class="swiper-slide"><img class="XL7-banner" src="image/XL7/Xl7.png" alt="XL 7 Banner"></div>
+          <div class="swiper-slide"><img class="XL7-banner" src="image/XL7/Xl7.png" alt="XL 7 Banner"></div>
+          ...
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         <div class="banner-description">
           <img class="banner-headline" src="image/XL7/bannerheader.png" alt="Gear to Accomplish">
           <p class="banner-description-value">Suzuki XL7 hadir dengan tampilan maskulin, tangguh dan berkarakter.
@@ -620,8 +720,9 @@
     </div>
   </div>
 
+  <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script type="text/javascript" src="xl7.js"></script>
-
 </body>
 
 </html>

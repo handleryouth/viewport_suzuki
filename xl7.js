@@ -1,5 +1,61 @@
 //jshint esversion:6
 
+/*for slideshow*/
+
+const swiper = new Swiper('.swiper-container', {
+  // Optional parameters
+  loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+});
+
+
+
+/*car booking*/
+
+
+const bookingCarContainer = document.querySelector(".booking-car-container");
+const bookingCarButton = document.querySelector(".booking-car-button");
+const form = document.querySelector(".booking-car-form");
+const crossIcon = document.querySelector(".fa-times");
+const cancelButton = document.querySelector(".form-button-1");
+
+bookingCarButton.addEventListener("click", function(){
+  form.classList.remove(".booking-car-form");
+  bookingCarContainer.classList.add("notshowed");
+  form.classList.remove("notshowed");
+});
+
+crossIcon.addEventListener("click", function(){
+  form.classList.add(".booking-car-form");
+  bookingCarContainer.classList.remove("notshowed");
+  form.classList.add("notshowed");
+});
+
+cancelButton.addEventListener("click", function(){
+  form.classList.add(".booking-car-form");
+  bookingCarContainer.classList.remove("notshowed");
+  form.classList.add("notshowed");
+});
+
+
+/*car booking*/
+
+
+
+
+
 /*car selection*/
 
 const XL7alpha = document.querySelector(".XL7-alpha");
