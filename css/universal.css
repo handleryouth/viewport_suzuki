@@ -1,0 +1,183 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  margin: 0;
+}
+
+.anchor-link{
+  text-decoration: none;
+  color: black;
+}
+
+
+
+/*for javascript*/
+.notshowed{
+  display:none !important;
+  visibility:hidden;
+}
+
+.underline-choosed{
+  border-bottom: 0.3rem solid #163c80;
+}
+
+
+.underline-choosed2{
+  border-bottom: 0.3rem solid #fff;
+}
+
+/*for javascript*/
+
+
+/*navigation bar*/
+
+
+.navbar, .left-navbar {
+  display: flex;
+  align-items: center;
+}
+
+.left-navbar{
+  justify-content: flex-start;
+}
+
+.navbar {
+  padding: 1rem;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background-color: white;
+  justify-content: space-between;
+}
+
+.logo-description {
+  font-size:0.5rem;
+  margin-left: 1rem;
+}
+
+.suzuki-logo {
+  width: 15%;
+}
+
+/*navigation bar*/
+
+
+
+/*address bar*/
+.address-navbar {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3rem;
+  flex-wrap: wrap;
+}
+
+.address-header{
+  font-size:2.3rem;
+}
+
+.address-link {
+  font-size: 1rem;
+  text-decoration: none;
+  color: black;
+  margin: 0 0.4rem;
+}
+
+.main-address {
+  text-align: center;
+  margin: 3rem auto;
+  width: 95%;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+  padding: 2rem 0;
+}
+
+.address-description {
+  width: 93%;
+  margin: 2rem auto;
+  font-size: 1.1rem;
+}
+
+.address-btn {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.address-button {
+  font-size: 1rem;
+  padding: 1.3rem 0;
+  margin: 1rem 0;
+  cursor: pointer;
+}
+
+.google-maps{
+  color: #163C80;
+  border: 2px solid #163C80;
+  font-weight:600;
+  background: white;
+}
+
+.google-maps:hover{
+  background: #163C80;
+  color: white;
+  transition: background-color .3s ease;
+}
+
+.telephone-number{
+  background: #163C80;
+  color: white;
+}
+
+
+/*address bar*/
+/*hotline*/
+.hotline {
+  text-align: center;
+}
+
+.hotline-image, .hotline-app {
+  width: 50%;
+  margin: 2rem auto;
+}
+
+.hotline-app-container {
+  display: flex;
+  flex-direction: column;
+}
+
+/*hotline*/
+
+/*copyright*/
+.copyright {
+  text-align: center;
+  padding: 3rem 0 10rem 0;
+  background-color: rgba(22, 60, 128, 1);
+  color: white;
+}
+
+/*copyright*/
+
+@media screen and (min-device-width:450px) {
+  .address-link {
+    font-size: 1rem;
+  }
+
+  .address-btn{
+    align-items: center;
+  }
+
+  .address-button {
+    font-size: 0.9rem;
+    width: 50%;
+    max-width: 400px;
+  }
+
+  .address-navbar{
+    margin-bottom: 3rem;
+  }
+
+  .hotline-image, .hotline-app{
+    max-width:200px;
+  }
+}

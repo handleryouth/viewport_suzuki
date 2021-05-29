@@ -1,0 +1,234 @@
+/*booking container*/
+.booking-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 20px;
+  background-color: #fff;
+  padding: 1rem 0;
+  width: 70%;
+  margin: 0 auto;
+  box-shadow: -1px 1px 30px -3px rgba(0, 0, 0, 0.63);
+  -webkit-box-shadow: -1px 1px 30px -3px rgba(0, 0, 0, 0.63);
+  -moz-box-shadow: -1px 1px 30px -3px rgba(0, 0, 0, 0.63);
+  border-radius: 5px;
+}
+
+.whatsapp, .price-tag, .service-booking, .credit-card {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+/*booking container*/
+.slide-image-container {
+  text-align: center;
+}
+
+.slide-image {
+  width: 100%;
+}
+
+/*select car*/
+.select-car-header {
+  text-align: center;
+}
+
+.selection {
+  display: flex;
+  width: 100%;
+}
+
+.select-car-container {
+  padding-top: 2rem;
+  color: white;
+  background-color: rgba(22, 60, 128, 1);
+}
+
+.passenger, .commercial {
+  flex-basis: 50%;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.car {
+  display: flex;
+  align-items: center;
+  margin: 2rem 0;
+}
+
+.car-description, .car-container {
+  flex-basis: 50%;
+}
+
+.car-description {
+  font-size: 1rem;
+  line-height: 0.8;
+}
+
+.car-description-button {
+  font-size: 0.8rem;
+  padding: 0.5rem 2rem;
+  color: rgba(31, 117, 225, 1);
+  border: 1px solid rgba(31, 117, 225, 0.63);
+  background-color: rgba(31, 117, 225, 0.08);
+}
+
+.car-container {
+  text-align: center;
+}
+
+.car-img {
+  width: 85%;
+}
+
+.car-button {
+  margin: 5rem auto;
+  display: block;
+  width: 40%;
+  font-size: 1rem;
+  padding: 1rem 0;
+  color: rgba(22, 60, 128, 1);
+  background-color: #fff;
+  border: 2px solid #163C80;
+  font-weight: 600;
+}
+
+.car-button:hover {
+  background-color: rgba(22, 60, 128, 1);
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+/*select car*/
+/*service order and sparepart*/
+.service-order {
+  text-align: center;
+  background-image: url("../image/dealerOutlet/service.png");
+  background-color: rgba(22, 60, 128, 1);
+  background-blend-mode: hard-light;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 16rem;
+  font-size: 2rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+}
+
+.service-order-header {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.service-order-description {
+  margin-top: 0;
+  margin-bottom: 5rem;
+  font-size: 1.1rem;
+}
+
+.service-button {
+  max-width: 400px;
+  margin: 0 auto;
+  width: 70%;
+  font-size: 1rem;
+  padding: 1rem;
+  border: 2px solid #FFFFFF;
+  background: transparent;
+  color: white;
+}
+
+.service-sparepart {
+  text-align: center;
+  background-image: url("../image/dealerOutlet/gear.png");
+  background-color: rgba(22, 60, 128, 1);
+  background-blend-mode: hard-light;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 16rem;
+  font-size: 2rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  margin: 2rem 0;
+}
+
+/*service order and sparepart*/
+@media screen and (min-device-width:450px) {
+  .slide-image {
+    width: 100%;
+    max-width: 450px;
+  }
+
+  .select-car, .service-order, .service-sparepart {
+    max-width: 450px;
+  }
+
+  /*car selection*/
+  .select-car {
+    margin: 0 auto
+  }
+
+  .passenger, .commercial {
+    font-size: 1.3rem;
+  }
+
+  .car-img {
+    width: 100%;
+  }
+
+  .car-description {
+    font-size: 1.2rem;
+    margin-left: 2rem;
+  }
+
+  .car-description-button {
+    font-size: 0.9rem;
+  }
+
+  .car-button {
+    width: 55%;
+    font-size: 1rem;
+  }
+
+  /*car selection*/
+  /*service */
+  .service-order, .service-sparepart {
+    height: 19rem;
+  }
+
+  .service-order {
+    margin: 2rem auto;
+  }
+
+  .service-sparepart {
+    margin: 2rem auto 4rem auto;
+  }
+
+  .service-order-header {
+    font-size: 1.8rem;
+  }
+
+  .service-order-description {
+    font-size: 1rem;
+    margin-bottom: 3rem;
+  }
+
+  .service-button {
+    width: 53%;
+    font-size: 1rem;
+    padding: 1rem;
+  }
+
+  /*service*/
+  .copyright {
+    position: relative;
+    top: 7rem;
+  }
+}
