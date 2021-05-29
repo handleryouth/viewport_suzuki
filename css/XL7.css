@@ -8,7 +8,7 @@
   bottom: 20px;
   background-color: #fff;
   padding: 1rem 0;
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
   box-shadow: -1px 1px 30px -3px rgba(0, 0, 0, 0.63);
   -webkit-box-shadow: -1px 1px 30px -3px rgba(0, 0, 0, 0.63);
@@ -46,15 +46,14 @@
 }
 
 .car-name {
-  padding: 1rem 0;
   margin-left: 1rem;
 }
 
 .car-specification-link {
-  font-size: 2rem;
+  font-size: 0.54rem;
   display: flex;
-  padding: 2rem 0;
   margin-left: 1rem;
+  justify-content: flex-start;
 }
 
 .car-specification-link-address {
@@ -121,7 +120,7 @@
 .XL7-Type {
   display: flex;
   justify-content: center;
-  font-size: 2.5rem;
+  font-size: 0.5rem;
   margin: 5rem 0;
 }
 
@@ -255,14 +254,14 @@
 }
 
 .exterior-row-2-image, .exterior-row-3-image, .interior-row-2-image, .interior-row-3-image {
-  flex-basis: 50%;
+  width:50%;
 }
 
 .exterior-button, .interior-button {
   display: block;
   margin: 2rem auto;
-  font-size: 2rem;
-  padding: 2rem;
+  font-size: 1rem;
+  padding: 1rem;
   cursor: pointer;
 }
 
@@ -281,7 +280,7 @@
 
 .car-specification-header {
   text-align: center;
-  font-size:3rem;
+  font-size:2rem;
   margin-bottom: 4rem;
 }
 
@@ -309,15 +308,20 @@
 
 .dimension-table, .machine-table, .transmission-table, .weight-table, .foundation-table, .capacity-table {
   margin: 1.5rem auto;
-  font-size: 2rem;
-  width: 80%;
+  font-size: 1rem;
+  width: 90%;
+  line-height: 33px;
+}
+
+.gear-table{
+  line-height: 33px;
 }
 
 /*car specification*/
 /*price list*/
 .price-list-header{
   text-align:center;
-  font-size:3.5rem;
+  font-size:2rem;
   margin-bottom:5rem;
 }
 
@@ -329,7 +333,7 @@
 .price1, .price2, .price3, .price4, .price5, .price6 {
   display: flex;
   justify-content: space-between;
-  font-size: 2rem;
+  font-size: 1.1rem;
   background-color: rgba(241, 245, 246, 1);
   margin: 2rem 0;
   padding: 0 2rem;
@@ -337,8 +341,8 @@
 }
 
 .price-button {
-  font-size: 2rem;
-  padding: 2rem;
+  font-size: 1rem;
+  padding: 1.5rem;
   display: block;
   margin: 0 auto;
   margin-bottom:5rem;
@@ -350,6 +354,13 @@
 }
 
 /*price list*/
+
+.copyright{
+  position: relative;
+  top: 8rem;
+}
+
+
 /*main section*/
 @media screen and (min-device-width:450px) {
   .overview, .car-customize {

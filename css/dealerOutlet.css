@@ -8,7 +8,7 @@
   bottom: 20px;
   background-color: #fff;
   padding: 1rem 0;
-  width: 70%;
+  width: 95%;
   margin: 0 auto;
   box-shadow: -1px 1px 30px -3px rgba(0, 0, 0, 0.63);
   -webkit-box-shadow: -1px 1px 30px -3px rgba(0, 0, 0, 0.63);
@@ -20,6 +20,7 @@
   display: flex;
   flex-flow: column;
   align-items: center;
+  margin: 0 1rem;
 }
 
 /*booking container*/
@@ -50,7 +51,7 @@
 .passenger, .commercial {
   flex-basis: 50%;
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 .car {
@@ -87,7 +88,7 @@
 .car-button {
   margin: 5rem auto;
   display: block;
-  width: 40%;
+  width: 50%;
   font-size: 1rem;
   padding: 1rem 0;
   color: rgba(22, 60, 128, 1);
@@ -160,6 +161,13 @@
 }
 
 /*service order and sparepart*/
+.copyright{
+  position:relative;
+  top:8rem;
+}
+
+
+
 @media screen and (min-device-width:450px) {
   .slide-image {
     width: 100%;
@@ -227,8 +235,8 @@
   }
 
   /*service*/
-  .copyright {
-    position: relative;
+  .copyright{
+    position: relative ;
     top: 7rem;
   }
 }
