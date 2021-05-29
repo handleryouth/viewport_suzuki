@@ -93,22 +93,22 @@
 }
 
 .overview-button {
-  font-size: 2rem;
-  padding: 2rem;
-  margin: 5rem 2rem;
+  font-size: 1rem;
+  padding: 1rem;
+  margin: 2rem 1rem;
   cursor: pointer;
 }
 
-.overview-brochure{
-  background-color:rgba(22, 60, 128, 1);
+.overview-brochure {
+  background-color: rgba(22, 60, 128, 1);
   border: 2px solid #fff;
   color: #fff;
 }
 
-.overview-price{
-  background-color:white;
+.overview-price {
+  background-color: white;
   border: none;
-  color:rgba(22, 60, 128, 1);
+  color: rgba(22, 60, 128, 1);
 }
 
 /*XL7 SLIDESHOW*/
@@ -121,11 +121,12 @@
   display: flex;
   justify-content: center;
   font-size: 0.5rem;
-  margin: 5rem 0;
+  margin: 2rem 0 3rem 0;
 }
 
 .XL7-Type-link {
-  padding: 0 3rem;
+  padding: 0 1rem;
+  font-size: 1.2rem;
   cursor: pointer;
 }
 
@@ -145,7 +146,7 @@
 }
 
 /*colour-list*/
-.car-colour{
+.car-colour {
   margin-bottom: 2rem;
 }
 
@@ -232,9 +233,9 @@
 /*colour selection 3*/
 /*car customize*/
 /*Eksterior*/
-.XL7-exterior, .XL7-interior{
+.XL7-exterior, .XL7-interior {
   background-color: rgba(22, 60, 128, 1);
-  padding:3rem 0;
+  padding: 3rem 0;
   margin: 3rem 0;
 }
 
@@ -242,7 +243,7 @@
   text-align: center;
   font-size: 2rem;
   color: #fff;
-  margin-bottom:4rem;
+  margin-bottom: 4rem;
 }
 
 .exterior-row-1-image, .interior-row-1-image {
@@ -254,7 +255,7 @@
 }
 
 .exterior-row-2-image, .exterior-row-3-image, .interior-row-2-image, .interior-row-3-image {
-  width:50%;
+  width: 50%;
 }
 
 .exterior-button, .interior-button {
@@ -265,22 +266,22 @@
   cursor: pointer;
 }
 
-.interior-button, .exterior-button{
-  background-color:rgba(22, 60, 128, 1);
+.interior-button, .exterior-button {
+  background-color: rgba(22, 60, 128, 1);
   border: 2px solid #fff;
   color: #fff;
 }
 
 /*Eksterior*/
 /*car specification*/
-.car-specification{
-  width:80%;
-  margin:5rem auto;
+.car-specification {
+  width: 80%;
+  margin: 5rem auto;
 }
 
 .car-specification-header {
   text-align: center;
-  font-size:2rem;
+  font-size: 2rem;
   margin-bottom: 4rem;
 }
 
@@ -289,11 +290,11 @@
   transition: transform 0.3s ease;
 }
 
-.arrow-down{
+.arrow-down {
   transition: transform 0.3s ease;
 }
 
-.specification1, .specification2, .specification3, .specification4, .specification5, .specification6{
+.specification1, .specification2, .specification3, .specification4, .specification5, .specification6 {
   margin: 2rem 0;
 }
 
@@ -313,16 +314,16 @@
   line-height: 33px;
 }
 
-.gear-table{
+.gear-table {
   line-height: 33px;
 }
 
 /*car specification*/
 /*price list*/
-.price-list-header{
-  text-align:center;
-  font-size:2rem;
-  margin-bottom:5rem;
+.price-list-header {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 5rem;
 }
 
 .price {
@@ -345,21 +346,19 @@
   padding: 1.5rem;
   display: block;
   margin: 0 auto;
-  margin-bottom:5rem;
+  margin-bottom: 5rem;
   color: rgba(22, 60, 128, 1);
-  background-color:white;
+  background-color: white;
   border: 2px solid rgba(22, 60, 128, 1);
   font-weight: 600;
   cursor: pointer;
 }
 
 /*price list*/
-
-.copyright{
+.copyright {
   position: relative;
   top: 8rem;
 }
-
 
 /*main section*/
 @media screen and (min-device-width:450px) {
