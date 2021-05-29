@@ -21,3 +21,21 @@ commercialCar.addEventListener("click", function(){
   commercialCarList.classList.remove("notshowed");
   commercialCar.classList.add("underline-choosed2");
 });
+
+
+
+/*for slide show*/
+const swiper = new Swiper('.swiper-container', {
+  // Optional parameters
+  loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+
+});
+
+
+/*for slideshow*/

@@ -51,8 +51,16 @@ body {
 }
 
 .logo-description {
-  font-size:0.5rem;
+  font-size:11px;
   margin-left: 1rem;
+}
+
+.logo-description h3{
+  font-weight: 700;
+}
+
+.logo-description p{
+  font-weight: 400;
 }
 
 .suzuki-logo {
