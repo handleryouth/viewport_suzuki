@@ -17,8 +17,6 @@
 <body>
 
 
-
-
   <!--sidebar menu-->
 
   <div class="sidenav">
@@ -132,12 +130,12 @@
         <p>XL 7</p>
         <div class="car-name">
           <div class="car-specification-link">
-            <a class="car-specification-link-address underline-choosed" href="#">Overview</a>
-            <a class="car-specification-link-address" href="#">Tipe & Warna</a>
-            <a class="car-specification-link-address" href="#">Eksterior</a>
-            <a class="car-specification-link-address" href="#">Interior</a>
-            <a class="car-specification-link-address" href="#">Spesifikasi</a>
-            <a class="car-specification-link-address" href="#">Harga</a>
+            <a class="car-specification-link-address underline-choosed" href="#overview">Overview</a>
+            <a class="car-specification-link-address notactivate" href="#typecolor">Tipe & Warna</a>
+            <a class="car-specification-link-address notactivate" href="#exterior">Eksterior</a>
+            <a class="car-specification-link-address notactivate" href="#interior">Interior</a>
+            <a class="car-specification-link-address notactivate" href="#specification">Spesifikasi</a>
+            <a class="car-specification-link-address notactivate" href="#price">Harga</a>
           </div>
         </div>
       </div>
@@ -168,13 +166,18 @@
             <div class="swiper-pagination"></div>
 
             <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev">
+              <img class="slide-arrow" src="image/left-arrow.png" alt="left-arrow">
+            </div>
+
+            <div class="swiper-button-next">
+              <img class="slide-arrow" src="image/right-arrow.png" alt="right-arrow">
+            </div>
 
           </div>
 
 
-          <div class="banner-description">
+          <div class="banner-description" id="overview">
             <img class="banner-headline" src="image/XL7/bannerheader.png" alt="Gear to Accomplish">
             <p class="banner-description-value">Suzuki XL7 hadir dengan tampilan maskulin, tangguh dan berkarakter.
               Desain modern SUV 7-Seater memberikan kebanggaan dan kepercayaan
@@ -192,7 +195,7 @@
 
       <!--car customize-->
 
-      <div class="car-customize">
+      <div class="car-customize" id="#typecolor">
         <h1 class="car-customize-header">Tipe & Warna</h1>
         <div class="XL7-Type">
           <p class="XL7-Type-link underline-choosed">XL7 Alpha</p>
@@ -308,7 +311,7 @@
 
       <!--car exterior-->
 
-      <div class="XL7-exterior">
+      <div class="XL7-exterior" id="exterior">
 
         <h1 class="XL7-exterior-header">Eksterior</h1>
         <div class="exterior">
@@ -359,7 +362,7 @@
 
       <!--car interior-->
 
-      <div class="XL7-interior">
+      <div class="XL7-interior" id="interior">
 
         <h1 class="XL7-interior-header">Interior</h1>
         <div class="interior">
@@ -412,7 +415,7 @@
 
       <!--specification-->
 
-      <div class="car-specification">
+      <div class="car-specification" id="specification">
         <h1 class="car-specification-header">SPESIFIKASI</h1>
         <div class="specification1">
           <div class="container-arrow">
@@ -670,7 +673,7 @@
 
       <!--car price list-->
 
-      <div class="price-list">
+      <div class="price-list" id="price">
         <h1 class="price-list-header">Daftar Harga <br> XL7</h1>
         <div class="price">
           <div class="price1">

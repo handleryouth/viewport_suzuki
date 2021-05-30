@@ -18,7 +18,7 @@ body {
   padding: 1rem 0 2rem 0;
   background-color: white;
   position: fixed;
-  top: 6rem;
+  top: 3rem;
   max-width: 450px;
   width: 100%;
   margin: 0 auto;
@@ -50,6 +50,12 @@ body {
   border-left: none;
   border-right: none;
   border-bottom: 1.5px solid #E5E9F2;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
 }
 
 .form-car {
@@ -139,18 +145,18 @@ body {
   cursor: pointer;
 }
 
-.whatsapp-logo{
+.whatsapp-logo {
   background: rgba(27, 215, 65, 1);
-  padding:0.5rem;
-  border-radius:50%;
+  padding: 0.5rem;
+  border-radius: 50%;
   color: white;
   font-size: 1rem;
 }
 
-.credit-card-logo{
+.credit-card-logo {
   background: rgba(232, 243, 255, 1);
-  border-radius:50%;
-  padding:1rem;
+  border-radius: 50%;
+  padding: 1rem;
 }
 
 .whatsapp p, .credit-card p {
@@ -199,6 +205,12 @@ body {
   padding: 0.8rem;
 }
 
+
+.notactivate{
+  color: rgba(22, 60, 128, 0.35);
+}
+
+
 /*NAVBAR*/
 /*XL7 SLIDE SHOW*/
 .overview-slideshow {
@@ -229,6 +241,18 @@ body {
 
 .swiper-pagination-bullet-active {
   background-color: #FFFFFF;
+}
+
+.slide-arrow {
+  background: white;
+  padding: 0.4rem 0.5rem;
+  border-radius: 50%;
+}
+
+.swiper-button-prev::after, .swiper-button-next::after {
+  content: '';
+  display: none;
+  visibility: hidden;
 }
 
 .banner-description {
@@ -588,14 +612,12 @@ body {
   line-height: 33px;
 }
 
-.dimension, .machine, .transmission, .weight, .foundation, .capacity{
+.dimension, .machine, .transmission, .weight, .foundation, .capacity {
   width: 99%;
   margin: 1rem auto;
   background-color: white;
   border-radius: 4px 4px 0px 0px;
-
 }
-
 
 .gear-table {
   line-height: 33px;
@@ -651,13 +673,12 @@ body {
   color: #163C80;
 }
 
-.price-button:hover{
+.price-button:hover {
   color: white;
   border: 2px solid #163C80;
-  background-color:#163C80;
+  background-color: #163C80;
   transition: background-color 0.3s ease;
 }
-
 
 /*price list*/
 .copyright {
