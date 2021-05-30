@@ -60,7 +60,7 @@ body {
   width: 15%;
 }
 
-.fa-bars{
+.fa-bars {
   cursor: pointer;
 }
 
@@ -76,7 +76,7 @@ body {
   transition: 0.5s;
   padding-top: 60px;
   display: flex;
-  justify-content:flex-end;
+  justify-content: flex-end;
   overflow: visible;
 }
 
@@ -88,8 +88,7 @@ body {
   align-items: flex-start;
   position: fixed;
   background-color: white;
-  transition:0.5s ease;
-
+  transition: 0.5s ease;
 }
 
 .sidebar-telephone {
@@ -121,7 +120,6 @@ body {
 .sidebar-link-address {
   padding: 1rem 0;
   color: #163C80;
-
   font-size: 18px;
   font-weight: 600;
 }
@@ -157,12 +155,11 @@ body {
 }
 
 .address-header {
-font-size: 16px;
-font-weight: 700;
-line-height: 26px;
-letter-spacing: 0.02em;
-text-align: center;
-
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 26px;
+  letter-spacing: 0.02em;
+  text-align: center;
 }
 
 .address-link {
@@ -175,7 +172,6 @@ text-align: center;
   line-height: 23px;
   letter-spacing: 0.02em;
   text-align: center;
-
 }
 
 .main-address {
@@ -189,22 +185,21 @@ text-align: center;
 
 .address-description {
   width: 93%;
-  margin:0 auto;
+  margin: 0 auto;
   font-size: 14px;
   font-weight: 700;
   line-height: 20px;
   letter-spacing: 0.02em;
 }
 
-.address-description2{
+.address-description2 {
   width: 93%;
-  margin:0 auto;
+  margin: 0 auto;
   font-size: 14px;
   font-weight: 500;
   line-height: 20px;
   letter-spacing: 0.02em;
 }
-
 
 .address-btn {
   display: flex;
@@ -216,36 +211,45 @@ text-align: center;
 
 .address-button {
   height: 46px;
-  width: 209px;
+  min-width: 209px;
   left: 83px;
   top: 4906px;
   border-radius: 2px;
   padding: 13px, 20px, 13px, 20px;
   box-sizing: border-box;
+  cursor: pointer;
 }
 
 .google-maps {
   color: #163C80;
   border: 2px solid #163C80;
   background: white;
-
   font-size: 14px;
   font-weight: 700;
   line-height: 17px;
   letter-spacing: 0em;
   text-align: center;
+  margin-bottom: 1rem;
 }
 
-.pin-map, .telp-icon{
+.telephone-number {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19px;
+  letter-spacing: 0.02em;
+  text-align: center;
+}
+
+.pin-map, .telp-icon {
   position: relative;
 }
 
-.pin-map{
+.pin-map {
   right: 1rem;
 }
 
-.telp-icon{
-  right: 2.4rem;
+.telp-icon {
+  right: 2rem;
 }
 
 .google-maps:hover {
@@ -265,13 +269,12 @@ text-align: center;
   text-align: center;
 }
 
-.hotline-header{
-font-size: 16px;
-font-weight: 700;
-line-height: 26px;
-letter-spacing: 0.02em;
-text-align: center;
-
+.hotline-header {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 26px;
+  letter-spacing: 0.02em;
+  text-align: center;
 }
 
 .hotline-image, .hotline-app {
@@ -296,7 +299,6 @@ text-align: center;
   font-weight: 400;
   line-height: 19px;
   letter-spacing: 0.02em;
-
 }
 
 /*copyright*/
@@ -311,7 +313,7 @@ text-align: center;
 
   .address-button {
     font-size: 0.9rem;
-    min-width:209px;
+    min-width: 209px;
     width: 50%;
     max-width: 400px;
   }
