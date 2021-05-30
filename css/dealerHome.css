@@ -135,10 +135,16 @@
 }
 
 .news-description {
-  margin-left: 2rem;
+  margin: 0 2rem;
   text-align: left;
   color: black;
   font-weight: 700;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 19px;
+  letter-spacing: 0.02em;
+  text-align: left;
 }
 
 .news-date {

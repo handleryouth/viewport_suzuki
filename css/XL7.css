@@ -1,5 +1,6 @@
 body {
   position: relative;
+  background-color: #E5E5E5;
 }
 
 /*booking form*/
@@ -18,7 +19,7 @@ body {
   padding: 1rem 0 2rem 0;
   background-color: white;
   position: fixed;
-  top: 3rem;
+  top: 1rem;
   max-width: 450px;
   width: 100%;
   margin: 0 auto;
@@ -58,8 +59,19 @@ body {
   text-align: left;
 }
 
+.form-name input[type=text]:focus, .form-email input[type=email]:focus, .form-number input[type=tel]:focus {
+  box-shadow: 1px 1px 19px -1px rgba(31, 117, 225, 1);
+  outline: none !important;
+  border: 1px solid rgba(31, 117, 225, 1);
+  transition: box-shadow .3s ease;
+}
+
 .form-car {
   display: flex;
+}
+
+.form-type1, .form-type2 {
+  flex-basis: 50%;
 }
 
 .form-type2 {
@@ -68,10 +80,13 @@ body {
 
 .form-type1 select, .form-type2 select {
   height: 2rem;
+  max-width: 11rem;
+  width: 100%;
   border-top: none;
   border-left: none;
   border-right: none;
   border-bottom: 1.5px solid #E5E9F2;
+  cursor: pointer;
 }
 
 .form-button {
@@ -110,9 +125,7 @@ body {
   padding: 1rem 0;
   width: 90%;
   margin: 0 auto;
-  box-shadow: -1px 1px 30px -3px rgba(0, 0, 0, 0.63);
-  -webkit-box-shadow: -1px 1px 30px -3px rgba(0, 0, 0, 0.63);
-  -moz-box-shadow: -1px 1px 30px -3px rgba(0, 0, 0, 0.63);
+  box-shadow: 0px 4px 9px 0px rgba(0, 0, 0, 0.14);
   border-radius: 5px;
   z-index: 3;
 }
@@ -174,6 +187,10 @@ body {
   background-color: white;
 }
 
+.navbar-down {
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
 .navbar-down p {
   font-weight: bold;
   font-size: 13px;
@@ -205,11 +222,9 @@ body {
   padding: 0.8rem;
 }
 
-
-.notactivate{
+.notactivate {
   color: rgba(22, 60, 128, 0.35);
 }
-
 
 /*NAVBAR*/
 /*XL7 SLIDE SHOW*/
@@ -311,8 +326,13 @@ body {
 
 /*XL7 SLIDESHOW*/
 /*car customize*/
-.car-customize-header {
+.car-customize {
+  background-color: white;
   margin-top: 2rem;
+  padding: 2rem 0 1rem 0;
+}
+
+.car-customize-header {
   margin-bottom: 0;
   text-align: center;
   font-weight: 600;
@@ -388,6 +408,7 @@ body {
 
 .colour1-value4 {
   background: rgba(255, 255, 255, 1);
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.22);
   margin: 0 0.5rem;
 }
 
@@ -409,9 +430,7 @@ body {
 
 .colour2-value3 {
   background: #fff;
-  box-shadow: -1px 1px 30px -3px rgba(0, 0, 0, 0.63);
-  -webkit-box-shadow: -1px 1px 30px -3px rgba(0, 0, 0, 0.63);
-  -moz-box-shadow: -1px 1px 30px -3px rgba(0, 0, 0, 0.63);
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.22);
   margin: 0 0.5rem;
 }
 
@@ -424,9 +443,7 @@ body {
 /*colour selection 3*/
 .colour3-value1 {
   background: #fff;
-  box-shadow: -1px 1px 30px -3px rgba(0, 0, 0, 0.63);
-  -webkit-box-shadow: -1px 1px 30px -3px rgba(0, 0, 0, 0.63);
-  -moz-box-shadow: -1px 1px 30px -3px rgba(0, 0, 0, 0.63);
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.22);
   margin: 0 0.5rem;
 }
 
@@ -492,15 +509,17 @@ body {
 .ex-in-description6, .ex-in-description7, .ex-in-description8, .ex-in-description9, .ex-in-description10 {
   position: absolute;
   color: #fff;
-  text-align: center;
   bottom: 0;
   font-weight: normal;
-  font-size: 11px;
-  line-height: 129.7%;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+  letter-spacing: 0em;
+  text-align: center;
 }
 
 .ex-in-description1 {
-  left: 20%;
+  left: 22%;
 }
 
 .ex-in-description2 {
@@ -561,8 +580,10 @@ body {
 /*Eksterior*/
 /*car specification*/
 .car-specification {
-  width: 90%;
-  margin: 3rem auto;
+  width: 100%;
+  margin: 1rem auto;
+  padding: 2rem 0;
+  background-color: white;
 }
 
 .car-specification-header {
@@ -584,9 +605,11 @@ body {
 }
 
 .specification1, .specification2, .specification3, .specification4, .specification5, .specification6 {
-  margin: 2rem 0;
+  margin: 2rem auto;
   background-color: #F1F5F6;
   cursor: pointer;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.09);
+  width: 90%;
 }
 
 .specification1 h3, .specification2 h3, .specification3 h3, .specification4 h3, .specification5 h3, .specification6 h3 {
@@ -634,6 +657,12 @@ body {
   line-height: 21px;
 }
 
+.price-list {
+  padding: 2rem 0;
+  background-color: white;
+  margin: 2rem 0;
+}
+
 .price {
   width: 90%;
   margin: 0 auto 6rem auto;
@@ -650,8 +679,8 @@ body {
   font-weight: bold;
   font-size: 14px;
   line-height: 165.5%;
-  /* or 23px */
   letter-spacing: 0.02em;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.09);
 }
 
 .price-button {
@@ -659,7 +688,7 @@ body {
   height: 43px;
   display: block;
   margin: 0 auto;
-  margin-bottom: 5rem;
+  margin-bottom: 3rem;
   background-color: white;
   border: 2px solid #163C80;
   box-sizing: border-box;
@@ -684,6 +713,10 @@ body {
 .copyright {
   position: relative;
   top: 8rem;
+}
+
+.address {
+  padding-top: 3rem;
 }
 
 /*main section*/
@@ -736,12 +769,18 @@ body {
     height: 3rem;
   }
 
+  /*car color*/
+  .car-customize {
+    margin: 2rem auto;
+  }
+
+  /*car color*/
   /*overview ection*/
   /*XL7 TYPE and interior*/
   .XL7-exterior, .XL7-interior {
     width: 100%;
     max-width: 450px;
-    margin: 0 auto 5rem auto;
+    margin: 0 auto 3rem auto;
   }
 
   .XL7-Type {
@@ -756,6 +795,10 @@ body {
   .exterior-button, .interior-button {
     font-size: 1.3rem;
     padding: 1rem;
+  }
+
+  .ex-in-description1 {
+    left: 25%;
   }
 
   /*XL 7 TYPE and interior*/
@@ -778,7 +821,7 @@ body {
   }
 
   .price-list {
-    margin: 0 auto;
+    margin: 2rem auto;
     width: 100%;
     max-width: 450px;
   }
