@@ -12,6 +12,35 @@
 </head>
 
 <body>
+
+  <!--sidebar menu-->
+
+  <div class="sidenav">
+    <div class="sidebar-content">
+      <i class="fas fa-times sidebar-content-cross"></i>
+      <div class="sidebar-link">
+        <a class="anchor-link sidebar-link-address" href="#">Beranda</a>
+        <a class="anchor-link sidebar-link-address" href="#">Tentang Kami</a>
+        <a class="anchor-link sidebar-link-address" href="#">Outlet</a>
+        <a class="anchor-link sidebar-link-address" href="#">Blog</a>
+        <a class="anchor-link sidebar-link-address" href="#">Promo</a>
+      </div>
+
+      <button class="sidebar-telephone" type="button" name="button">(022) 5204645</button>
+
+      <div class="sidebar-hotline">
+        <img class="sidebar-image-hotline" src="./image/halosuzuki.png" alt="Hotline logo">
+        <img class="sidebar-image-app" src="./image/mysuzuki.png" alt="mysuzuki Image">
+      </div>
+
+    </div>
+  </div>
+
+
+
+  <!--sidebar menu-->
+
+<div id="mainContent">
   <!--navigation bar-->
 
   <nav class="navbar">
@@ -26,13 +55,14 @@
     </a>
 
     <div class="right-navbar">
-      <i class="fas fa-bars fa-lg"></i>
+      <i class="fas fa-bars fa-lg" onclick="openNav()"></i>
     </div>
   </nav>
 
   <!--navigation bar-->
 
-  <main>
+
+  <main id="main">
 
     <div class="big-title">
       <h1 class="big-title-header">Temukan Outlet Suzuki terdekat di daerah sekitar Anda</h1>
@@ -49,7 +79,7 @@
           <p class="outlet-description">Sales, Service, Sparepart, Body & Paint</p>
           <h2 class="outlet-header">Suzuki NJS SOEKARNO - HATTA</h2>
           <p class="outlet-information"><i class="fas fa-phone-alt icon-info"></i>(022) 6204645</p>
-          <p class="outlet-information"><i class="fas fa-map-marker-alt icon-info" ></i>JL. Soekarno Hatta No. 289 Bandung 40234</p>
+          <p class="outlet-information"><i class="fas fa-map-marker-alt icon-info"></i>JL. Soekarno Hatta No. 289 Bandung 40234</p>
         </div>
         <a class="anchor-link" href="dealerOutlet.html"><button class="outlet-button" type="button" name="button">Kunjungi Website Outlet</button></a>
       </div>
@@ -82,7 +112,7 @@
           <p class="outlet-description">Sales , Service, Sparepart</p>
           <h2 class="outlet-header">SUZUKI NJS BUAH BATU</h2>
           <p class="outlet-information"><i class="fas fa-phone-alt icon-info"></i>(022) 7300723</p>
-          <p class="outlet-information"><i class="fas fa-map-marker-alt icon-info" ></i>JL. Soekarno – Hatta No. 513 Bandung</p>
+          <p class="outlet-information"><i class="fas fa-map-marker-alt icon-info"></i>JL. Soekarno – Hatta No. 513 Bandung</p>
         </div>
         <a class="anchor-link" href="dealerOutlet.html"><button class="outlet-button" type="button" name="button">Kunjungi Website Outlet</button></a>
       </div>
@@ -116,7 +146,7 @@
         <div class="card-description">
           <p class="outlet-description">Sales</p>
           <h2 class="outlet-header">SUZUKI NJS KOPO</h2>
-          <p class="outlet-information"><i class="fas fa-phone-alt icon-info" ></i>(022) 5422259</p>
+          <p class="outlet-information"><i class="fas fa-phone-alt icon-info"></i>(022) 5422259</p>
           <p class="outlet-information"><i class="fas fa-map-marker-alt icon-info"></i>JL. Kopo (Sayati) 260 C Bandung</p>
         </div>
         <a class="anchor-link" href="dealerOutlet.html"><button class="outlet-button" type="button" name="button">Kunjungi Website Outlet</button></a>
@@ -134,7 +164,7 @@
           <p class="outlet-description">Sales</p>
           <h2 class="outlet-header">SUZUKI NJS DAGO</h2>
           <p class="outlet-information"><i class="fas fa-phone-alt icon-info"></i>(022) 6002512</p>
-          <p class="outlet-information"><i class="fas fa-map-marker-alt icon-info" ></i>JL. IR.H. Juanda (Dago) No. 75 Bandung</p>
+          <p class="outlet-information"><i class="fas fa-map-marker-alt icon-info"></i>JL. IR.H. Juanda (Dago) No. 75 Bandung</p>
         </div>
         <a class="anchor-link" href="dealerOutlet.html"><button class="outlet-button" type="button" name="button">Kunjungi Website Outlet</button></a>
       </div>
@@ -208,7 +238,7 @@
             <p>Suzuki Peduli Gempa Maluku 2019, Bentuk Kepedulian Untuk Korban </p>
           </div>
         </div>
-        
+
         <button class="news-button" type="button" name="button">Lihat Semua Informasi</button>
 
       </div>
@@ -234,10 +264,10 @@
         <p class="address-description">SUZUKI Nusantara Jaya Sentosa <br>
           Jl. Soekarno - Hatta no. 289, Bojongloa
           Kidul Bandung 40234</p>
-          <div class="address-btn">
-            <button class="address-button google-maps" type="button" name="button" style="">CEK GOOGLE MAPS</button>
-            <button class="address-button telephone-number" type="button" name="button">(022) 5204645</button>
-          </div>
+        <div class="address-btn">
+          <button class="address-button google-maps" type="button" name="button" style="">CEK GOOGLE MAPS</button>
+          <button class="address-button telephone-number" type="button" name="button">(022) 5204645</button>
+        </div>
 
       </div>
 
@@ -266,6 +296,11 @@
 
   </footer>
 
+
+</div>
+
+
+<script type="text/javascript" src="sidebar.js"></script>
 
 </body>
 

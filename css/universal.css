@@ -3,40 +3,33 @@ body {
   margin: 0;
 }
 
-.anchor-link{
+.anchor-link {
   text-decoration: none;
   color: black;
 }
 
-
-
 /*for javascript*/
-.notshowed{
-  display:none !important;
-  visibility:hidden;
+.notshowed {
+  display: none !important;
+  visibility: hidden;
 }
 
-.underline-choosed{
+.underline-choosed {
   border-bottom: 0.3rem solid #163c80;
 }
 
-
-.underline-choosed2{
+.underline-choosed2 {
   border-bottom: 0.3rem solid #fff;
 }
 
 /*for javascript*/
-
-
 /*navigation bar*/
-
-
 .navbar, .left-navbar {
   display: flex;
   align-items: center;
 }
 
-.left-navbar{
+.left-navbar {
   justify-content: flex-start;
 }
 
@@ -51,15 +44,15 @@ body {
 }
 
 .logo-description {
-  font-size:11px;
+  font-size: 11px;
   margin-left: 1rem;
 }
 
-.logo-description h3{
+.logo-description h3 {
   font-weight: 700;
 }
 
-.logo-description p{
+.logo-description p {
   font-weight: 400;
 }
 
@@ -67,10 +60,94 @@ body {
   width: 15%;
 }
 
+.fa-bars{
+  cursor: pointer;
+}
+
 /*navigation bar*/
+/*sidebar properties*/
+.sidenav {
+  height: 100%;
+  position: fixed;
+  z-index: 3;
+  bottom: 0;
+  right: 0;
+  background-color: #111;
+  transition: 0.5s;
+  padding-top: 60px;
+  display: flex;
+  justify-content:flex-end;
+  overflow: visible;
+}
 
+.sidebar-content {
+  width: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: fixed;
+  background-color: white;
+  transition:0.5s ease;
 
+}
 
+.sidebar-telephone {
+  width: 80%;
+  margin: 2rem auto;
+  padding: 0.8rem;
+  background-color: #163C80;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+}
+
+.sidebar-content-cross {
+  width: 90%;
+  text-align: right;
+  margin: 2rem 0;
+  cursor: pointer;
+}
+
+.sidebar-link {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1rem;
+  width: 90%;
+  padding: 1rem 0;
+  border-bottom: 1px solid gray;
+}
+
+.sidebar-link-address {
+  padding: 1rem 0;
+  color: #163C80;
+
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.sidebar-hotline {
+  display: flex;
+  align-items: center;
+}
+
+.sidebar-image {
+  width: 50%;
+}
+
+.sidebar-image-hotline {
+  width: 81px;
+  height: 81px;
+  margin: 0 1rem;
+}
+
+.sidebar-image-app {
+  width: 163px;
+  height: 53px;
+  margin: 0 1rem;
+}
+
+/*sidebar properties*/
 /*address bar*/
 .address-navbar {
   display: flex;
@@ -79,8 +156,8 @@ body {
   flex-wrap: wrap;
 }
 
-.address-header{
-  font-size:2.3rem;
+.address-header {
+  font-size: 2.3rem;
 }
 
 .address-link {
@@ -119,24 +196,23 @@ body {
   cursor: pointer;
 }
 
-.google-maps{
+.google-maps {
   color: #163C80;
   border: 2px solid #163C80;
-  font-weight:600;
+  font-weight: 600;
   background: white;
 }
 
-.google-maps:hover{
+.google-maps:hover {
   background: #163C80;
   color: white;
   transition: background-color .3s ease;
 }
 
-.telephone-number{
+.telephone-number {
   background: #163C80;
   color: white;
 }
-
 
 /*address bar*/
 /*hotline*/
@@ -155,7 +231,6 @@ body {
 }
 
 /*hotline*/
-
 /*copyright*/
 .copyright {
   text-align: center;
@@ -165,13 +240,12 @@ body {
 }
 
 /*copyright*/
-
 @media screen and (min-device-width:450px) {
   .address-link {
     font-size: 1rem;
   }
 
-  .address-btn{
+  .address-btn {
     align-items: center;
   }
 
@@ -181,11 +255,11 @@ body {
     max-width: 400px;
   }
 
-  .address-navbar{
+  .address-navbar {
     margin-bottom: 3rem;
   }
 
-  .hotline-image, .hotline-app{
-    max-width:200px;
+  .hotline-image, .hotline-app {
+    max-width: 200px;
   }
 }

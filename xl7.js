@@ -1,5 +1,6 @@
 //jshint esversion:6
 
+
 /*for slideshow*/
 
 const swiper = new Swiper('.swiper-container', {
@@ -20,6 +21,7 @@ const swiper = new Swiper('.swiper-container', {
 
 });
 
+/*for slideshow*/
 
 
 /*car booking*/
@@ -27,7 +29,7 @@ const swiper = new Swiper('.swiper-container', {
 
 const bookingCarContainer = document.querySelector(".booking-car-container");
 const bookingCarButton = document.querySelector(".booking-car-button");
-const form = document.querySelector(".booking-car-form");
+const form = document.querySelector(".form-container");
 const crossIcon = document.querySelector(".fa-times");
 const cancelButton = document.querySelector(".form-button-1");
 

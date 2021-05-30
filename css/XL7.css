@@ -1,9 +1,24 @@
+body{
+  position: relative;
+}
+
+
 /*booking form*/
+.form-container{
+  position: absolute;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
 .booking-car-form{
   padding: 1rem 0 2rem 0;
   background-color:white;
-  position: sticky;
-  top: 90px;
+  position:fixed;
+  top:11rem;
   z-index: 3;
   max-width:450px;
   width:100%;
@@ -18,6 +33,7 @@
 
 .fa-times{
   margin-left: 1rem;
+  cursor: pointer;
 }
 
 
@@ -30,7 +46,7 @@
 }
 
 
-.form-name input[type=text], .form-email input[type=email], .form-number input[type=number]{
+.form-name input[type=text], .form-email input[type=email], .form-number input[type=tel]{
   width:99%;
   height:2rem;
   border-top: none;
@@ -65,6 +81,7 @@
   font-size: 1rem;
   padding: 0.8rem;
   border: none;
+  cursor: pointer;
 }
 
 .form-button-1{
