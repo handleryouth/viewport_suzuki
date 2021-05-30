@@ -15,7 +15,7 @@ body {
 }
 
 .underline-choosed {
-  border-bottom: 0.3rem solid #163c80;
+  border-bottom: 0.3rem solid #163c80 !important;
 }
 
 .underline-choosed2 {

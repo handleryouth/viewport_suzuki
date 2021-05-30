@@ -1,102 +1,97 @@
-body{
+body {
   position: relative;
 }
 
-
 /*booking form*/
-.form-container{
+.form-container {
   position: absolute;
-  display:flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   height: 100%;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.7);
+  z-index: 5;
 }
 
-.booking-car-form{
+.booking-car-form {
   padding: 1rem 0 2rem 0;
-  background-color:white;
-  position:fixed;
-  top:11rem;
-  z-index: 3;
-  max-width:450px;
-  width:100%;
+  background-color: white;
+  position: fixed;
+  top: 6rem;
+  max-width: 450px;
+  width: 100%;
   margin: 0 auto;
 }
 
-.form-header{
-  display:flex;
-  align-items:center;
+.form-header {
+  display: flex;
+  align-items: center;
   justify-content: space-between;
 }
 
-.fa-times{
+.cross-form {
   margin-left: 1rem;
   cursor: pointer;
 }
 
-
-.form-header h3{
-  flex-basis:65%;
+.form-header h3 {
+  flex-basis: 65%;
 }
 
-.form{
-  margin:2rem;
+.form {
+  margin: 2rem;
 }
 
-
-.form-name input[type=text], .form-email input[type=email], .form-number input[type=tel]{
-  width:99%;
-  height:2rem;
+.form-name input[type=text], .form-email input[type=email], .form-number input[type=tel] {
+  width: 99%;
+  height: 2rem;
   border-top: none;
   border-left: none;
   border-right: none;
   border-bottom: 1.5px solid #E5E9F2;
 }
 
-.form-car{
-  display:flex;
+.form-car {
+  display: flex;
 }
 
-.form-type2{
+.form-type2 {
   margin-left: 2rem;
 }
 
-.form-type1 select, .form-type2 select{
-  height:2rem;
+.form-type1 select, .form-type2 select {
+  height: 2rem;
   border-top: none;
   border-left: none;
   border-right: none;
   border-bottom: 1.5px solid #E5E9F2;
 }
 
-.form-button{
-  display:flex;
-  justify-content:space-around;
+.form-button {
+  display: flex;
+  justify-content: space-around;
 }
 
-.form-button-1, .form-button-2{
-  width:40%;
+.form-button-1, .form-button-2 {
+  width: 40%;
   font-size: 1rem;
   padding: 0.8rem;
   border: none;
   cursor: pointer;
 }
 
-.form-button-1{
+.form-button-1 {
   color: rgba(22, 60, 128, 1);
-  background-color:white;
+  background-color: white;
 }
 
-.form-button-2{
+.form-button-2 {
   color: #fff;
-  background-color:rgba(22, 60, 128, 1);
+  background-color: rgba(22, 60, 128, 1);
 }
 
 /*booking form*/
-
-
 /*booking car container*/
 .booking-car-container {
   display: flex;
@@ -113,6 +108,7 @@ body{
   -webkit-box-shadow: -1px 1px 30px -3px rgba(0, 0, 0, 0.63);
   -moz-box-shadow: -1px 1px 30px -3px rgba(0, 0, 0, 0.63);
   border-radius: 5px;
+  z-index: 3;
 }
 
 .booking-car-button {
@@ -144,21 +140,35 @@ body{
   background-color: white;
 }
 
+.navbar-down p {
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  padding: 0.5rem 0 0.5rem 1rem;
+  color: #111010;
+  background: #F8F7F7;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
 .car-name {
-  margin-left: 1rem;
+  overflow-x: auto;
 }
 
 .car-specification-link {
-  font-size: 0.54rem;
   display: flex;
-  margin-left: 1rem;
-  justify-content: flex-start;
+  margin-right: 2rem;
+  width: 35rem;
 }
 
 .car-specification-link-address {
   text-decoration: none;
   color: black;
-  margin: 0 1.5rem 0 0;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 20px;
+  padding: 0.8rem;
 }
 
 /*NAVBAR*/
@@ -166,7 +176,6 @@ body{
 .overview-slideshow {
   background-color: rgba(22, 60, 128, 1);
 }
-
 
 .XL7-banner {
   width: 100%;
@@ -182,30 +191,45 @@ body{
 .banner-description-value {
   width: 90%;
   margin: 0 auto;
-  padding-bottom: 5rem;
-  line-height: 1.5;
+  padding-bottom: 2rem;
   border-bottom: 2px solid gray;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0em;
 }
 
 .banner-headline {
   width: 80%;
-  margin: 3rem auto;
+  margin: 2rem auto;
+}
+
+.overview-button-collection {
+  margin: 2rem 0;
 }
 
 .overview-button {
-  font-size: 1rem;
-  padding: 1rem;
-  margin: 2rem 1rem;
+  border-radius: 2px;
   cursor: pointer;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  margin: 0 0.4rem;
 }
 
 .overview-brochure {
   background-color: rgba(22, 60, 128, 1);
   border: 2px solid #fff;
   color: #fff;
+  width: 156px;
+  height: 36.65px;
 }
 
 .overview-price {
+  width: 91px;
+  height: 36.65px;
   background-color: white;
   border: none;
   color: rgba(22, 60, 128, 1);
@@ -214,35 +238,51 @@ body{
 /*XL7 SLIDESHOW*/
 /*car customize*/
 .car-customize-header {
+  margin-top: 2rem;
+  margin-bottom: 0;
   text-align: center;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21px;
 }
 
 .XL7-Type {
   display: flex;
   justify-content: center;
   font-size: 0.5rem;
-  margin: 2rem 0 3rem 0;
+  margin: 1rem 0 3rem 0;
 }
 
 .XL7-Type-link {
   padding: 0 1rem;
-  font-size: 1.2rem;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 20px;
   cursor: pointer;
+  border-bottom: 0.3rem solid rgba(17, 16, 16, 0.2);
 }
 
 .choosing-car {
   text-align: center;
 }
 
+.choosing-car h3 {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 20px;
+}
+
 .round {
   border-radius: 50%;
-  height: 2rem;
-  width: 2rem;
+  height: 36px;
+  width: 36px;
   cursor: pointer;
+  box-sizing: border-box;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.22);
 }
 
 .XL7-alpha-image, .XL7-beta-image, .XL7-zeta-image {
-  width: 100%;
+  width: 80%;
 }
 
 /*colour-list*/
@@ -274,14 +314,15 @@ body{
 
 .colour1-value4 {
   background: rgba(255, 255, 255, 1);
-  box-shadow: -1px 1px 30px -3px rgba(0, 0, 0, 0.63);
-  -webkit-box-shadow: -1px 1px 30px -3px rgba(0, 0, 0, 0.63);
-  -moz-box-shadow: -1px 1px 30px -3px rgba(0, 0, 0, 0.63);
   margin: 0 0.5rem;
 }
 
 /*colour selection 1*/
 /*colour selection 2*/
+.border-choosed {
+  border: 2px solid #163C80 !important;
+}
+
 .colour2-value1 {
   background-color: #534050;
   margin: 0 0.5rem;
@@ -335,35 +376,107 @@ body{
 /*Eksterior*/
 .XL7-exterior, .XL7-interior {
   background-color: rgba(22, 60, 128, 1);
-  padding: 3rem 0;
   margin: 3rem 0;
+  position: relative;
+  padding: 1rem 0;
 }
 
 .XL7-exterior-header, .XL7-interior-header {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21px;
   text-align: center;
-  font-size: 2rem;
   color: #fff;
-  margin-bottom: 4rem;
+  padding: 1.3rem 0;
+  margin: 0;
 }
 
 .exterior-row-1-image, .interior-row-1-image {
   width: 100%;
 }
 
+
 .exterior-row-2, .exterior-row-3, .interior-row-2, .interior-row-3 {
   display: flex;
 }
 
+.exterior-row-2, .interior-row-2 {
+  position: relative;
+  bottom: 5px;
+}
+
+.exterior-row-3, .interior-row-3 {
+  position: relative;
+  bottom: 9px;
+}
+
 .exterior-row-2-image, .exterior-row-3-image, .interior-row-2-image, .interior-row-3-image {
-  width: 50%;
+  width: 100%;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 42.2%, #000000 97.59%);
+}
+
+.ex-in-description1, .ex-in-description2, .ex-in-description3, .ex-in-description4, .ex-in-description5,
+.ex-in-description6, .ex-in-description7, .ex-in-description8, .ex-in-description9, .ex-in-description10 {
+  position: absolute;
+  color: #fff;
+  text-align: center;
+  bottom: 0;
+  font-weight: normal;
+  font-size: 11px;
+  line-height: 129.7%;
+}
+
+.ex-in-description1 {
+  left: 20%;
+}
+
+.ex-in-description2 {
+  left: 5%
+}
+
+.ex-in-description3 {
+  left: 10%
+}
+
+.ex-in-description9, .ex-in-description10 {
+  left: 5%;
+}
+
+.ex-in-description4 {
+  left: 20%;
+}
+
+.ex-in-description5 {
+  left: 35%;
+}
+
+.ex-in-description6 {
+  left: 33%;
+}
+
+.ex-in-description7 {
+  left: 33%;
+}
+
+.exterior-row-1-value-1, .exterior-row-2-value-1, .exterior-row-2-value-2, .exterior-row-3-value-1, .exterior-row-3-value-2,
+.interior-row-1-value-1, .interior-row-2-value-1, .interior-row-2-value-2, .interior-row-3-value-1, .interior-row-3-value-2 {
+  position: relative;
+  flex-basis: 50%;
 }
 
 .exterior-button, .interior-button {
   display: block;
   margin: 2rem auto;
-  font-size: 1rem;
   padding: 1rem;
   cursor: pointer;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 17px;
+  letter-spacing: 0em;
+  border: 2px solid #FFFFFF;
+  box-sizing: border-box;
+  border-radius: 2px;
 }
 
 .interior-button, .exterior-button {
@@ -375,14 +488,17 @@ body{
 /*Eksterior*/
 /*car specification*/
 .car-specification {
-  width: 80%;
-  margin: 5rem auto;
+  width: 90%;
+  margin: 3rem auto;
 }
 
 .car-specification-header {
   text-align: center;
-  font-size: 2rem;
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21px;
 }
 
 .arrow-up {
@@ -396,6 +512,17 @@ body{
 
 .specification1, .specification2, .specification3, .specification4, .specification5, .specification6 {
   margin: 2rem 0;
+  background-color: #F1F5F6;
+  ;
+}
+
+.specification1 h3, .specification2 h3, .specification3 h3, .specification4 h3, .specification5 h3, .specification6 h3 {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
 }
 
 .container-arrow {
@@ -422,8 +549,11 @@ body{
 /*price list*/
 .price-list-header {
   text-align: center;
-  font-size: 2rem;
-  margin-bottom: 5rem;
+  margin-bottom: 2rem;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21px;
 }
 
 .price {
@@ -434,24 +564,35 @@ body{
 .price1, .price2, .price3, .price4, .price5, .price6 {
   display: flex;
   justify-content: space-between;
-  font-size: 1.1rem;
   background-color: rgba(241, 245, 246, 1);
-  margin: 2rem 0;
-  padding: 0 2rem;
+  margin: 1rem 0;
+  padding: 0 1rem;
   border-radius: 5px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 165.5%;
+  /* or 23px */
+  letter-spacing: 0.02em;
 }
 
 .price-button {
-  font-size: 1rem;
-  padding: 1.5rem;
+  width: 212px;
+  height: 43px;
   display: block;
   margin: 0 auto;
   margin-bottom: 5rem;
-  color: rgba(22, 60, 128, 1);
   background-color: white;
-  border: 2px solid rgba(22, 60, 128, 1);
+  border: 2px solid #163C80;
+  box-sizing: border-box;
+  border-radius: 2px;
   font-weight: 600;
   cursor: pointer;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #163C80;
 }
 
 /*price list*/
@@ -467,6 +608,14 @@ body{
     width: 100%;
     margin: 0 auto;
   }
+
+
+  /*booking car form*/
+.booking-car-form{
+  top: 11rem;
+}
+
+  /*booking car form*/
 
   /*navbar*/
   .car-name {
@@ -488,8 +637,16 @@ body{
 
   .overview-button {
     font-size: 1.1rem;
-    padding: 1rem;
-    margin: 2rem 1rem;
+    margin: 1rem;
+  }
+
+  .overview-brochure{
+    width: 11rem;
+    height: 3rem;
+  }
+
+  .overview-price{
+    height: 3rem;
   }
 
   /*overview ection*/

@@ -19,6 +19,7 @@ const swiper = new Swiper('.swiper-container', {
     prevEl: '.swiper-button-prev',
   },
 
+
 });
 
 /*for slideshow*/
@@ -30,7 +31,7 @@ const swiper = new Swiper('.swiper-container', {
 const bookingCarContainer = document.querySelector(".booking-car-container");
 const bookingCarButton = document.querySelector(".booking-car-button");
 const form = document.querySelector(".form-container");
-const crossIcon = document.querySelector(".fa-times");
+const closeIcon = document.querySelector(".cross-form");
 const cancelButton = document.querySelector(".form-button-1");
 
 bookingCarButton.addEventListener("click", function(){
@@ -39,7 +40,7 @@ bookingCarButton.addEventListener("click", function(){
   form.classList.remove("notshowed");
 });
 
-crossIcon.addEventListener("click", function(){
+closeIcon.addEventListener("click", function(){
   form.classList.add(".booking-car-form");
   bookingCarContainer.classList.remove("notshowed");
   form.classList.add("notshowed");
@@ -139,6 +140,12 @@ const color4Section1 = document.querySelector(".colour1-value4");
 
 
 color1Section1.addEventListener("click", function(){
+  color1Section1.classList.add("border-choosed");
+  color2Section1.classList.remove("border-choosed");
+  color3Section1.classList.remove("border-choosed");
+  color4Section1.classList.remove("border-choosed");
+
+
   xlAlpha1.classList.remove("notshowed");
   xlAlpha2.classList.add("notshowed");
   xlAlpha3.classList.add("notshowed");
@@ -146,6 +153,12 @@ color1Section1.addEventListener("click", function(){
 });
 
 color2Section1.addEventListener("click", function(){
+  color1Section1.classList.remove("border-choosed");
+  color2Section1.classList.add("border-choosed");
+  color3Section1.classList.remove("border-choosed");
+  color4Section1.classList.remove("border-choosed");
+
+
   xlAlpha1.classList.add("notshowed");
   xlAlpha2.classList.remove("notshowed");
   xlAlpha3.classList.add("notshowed");
@@ -153,6 +166,11 @@ color2Section1.addEventListener("click", function(){
 });
 
 color3Section1.addEventListener("click", function(){
+  color1Section1.classList.remove("border-choosed");
+  color2Section1.classList.remove("border-choosed");
+  color3Section1.classList.add("border-choosed");
+  color4Section1.classList.remove("border-choosed");
+
   xlAlpha1.classList.add("notshowed");
   xlAlpha2.classList.add("notshowed");
   xlAlpha3.classList.remove("notshowed");
@@ -160,6 +178,11 @@ color3Section1.addEventListener("click", function(){
 });
 
 color4Section1.addEventListener("click", function(){
+  color1Section1.classList.remove("border-choosed");
+  color2Section1.classList.remove("border-choosed");
+  color3Section1.classList.remove("border-choosed");
+  color4Section1.classList.add("border-choosed");
+
   xlAlpha1.classList.add("notshowed");
   xlAlpha2.classList.add("notshowed");
   xlAlpha3.classList.add("notshowed");
@@ -183,6 +206,11 @@ const color4Section2 = document.querySelector(".colour2-value4");
 
 
 color1Section2.addEventListener("click", function(){
+  color1Section2.classList.add("border-choosed");
+  color2Section2.classList.remove("border-choosed");
+  color3Section2.classList.remove("border-choosed");
+  color4Section2.classList.remove("border-choosed");
+
   xlBeta1.classList.remove("notshowed");
   xlBeta2.classList.add("notshowed");
   xlBeta3.classList.add("notshowed");
@@ -190,6 +218,12 @@ color1Section2.addEventListener("click", function(){
 });
 
 color2Section2.addEventListener("click", function(){
+
+  color1Section2.classList.remove("border-choosed");
+  color2Section2.classList.add("border-choosed");
+  color3Section2.classList.remove("border-choosed");
+  color4Section2.classList.remove("border-choosed");
+
   xlBeta1.classList.add("notshowed");
   xlBeta2.classList.remove("notshowed");
   xlBeta3.classList.add("notshowed");
@@ -197,6 +231,12 @@ color2Section2.addEventListener("click", function(){
 });
 
 color3Section2.addEventListener("click", function(){
+
+  color1Section2.classList.remove("border-choosed");
+  color2Section2.classList.remove("border-choosed");
+  color3Section2.classList.add("border-choosed");
+  color4Section2.classList.remove("border-choosed");
+
   xlBeta1.classList.add("notshowed");
   xlBeta2.classList.add("notshowed");
   xlBeta3.classList.remove("notshowed");
@@ -204,6 +244,11 @@ color3Section2.addEventListener("click", function(){
 });
 
 color4Section2.addEventListener("click", function(){
+  color1Section2.classList.remove("border-choosed");
+  color2Section2.classList.remove("border-choosed");
+  color3Section2.classList.remove("border-choosed");
+  color4Section2.classList.add("border-choosed");
+
   xlBeta1.classList.add("notshowed");
   xlBeta2.classList.add("notshowed");
   xlBeta3.classList.add("notshowed");
@@ -228,6 +273,11 @@ const color4Section3 = document.querySelector(".colour3-value4");
 
 
 color1Section3.addEventListener("click", function(){
+  color1Section3.classList.add("border-choosed");
+  color2Section3.classList.remove("border-choosed");
+  color3Section3.classList.remove("border-choosed");
+  color4Section3.classList.remove("border-choosed");
+
   xlZeta1.classList.remove("notshowed");
   xlZeta2.classList.add("notshowed");
   xlZeta3.classList.add("notshowed");
@@ -235,6 +285,12 @@ color1Section3.addEventListener("click", function(){
 });
 
 color2Section3.addEventListener("click", function(){
+
+  color1Section3.classList.remove("border-choosed");
+  color2Section3.classList.add("border-choosed");
+  color3Section3.classList.remove("border-choosed");
+  color4Section3.classList.remove("border-choosed");
+
   xlZeta1.classList.add("notshowed");
   xlZeta2.classList.remove("notshowed");
   xlZeta3.classList.add("notshowed");
@@ -242,6 +298,12 @@ color2Section3.addEventListener("click", function(){
 });
 
 color3Section3.addEventListener("click", function(){
+
+  color1Section3.classList.remove("border-choosed");
+  color2Section3.classList.remove("border-choosed");
+  color3Section3.classList.add("border-choosed");
+  color4Section3.classList.remove("border-choosed");
+
   xlZeta1.classList.add("notshowed");
   xlZeta2.classList.add("notshowed");
   xlZeta3.classList.remove("notshowed");
@@ -249,6 +311,12 @@ color3Section3.addEventListener("click", function(){
 });
 
 color4Section3.addEventListener("click", function(){
+
+  color1Section3.classList.remove("border-choosed");
+  color2Section3.classList.remove("border-choosed");
+  color3Section3.classList.remove("border-choosed");
+  color4Section3.classList.add("border-choosed");
+
   xlZeta1.classList.add("notshowed");
   xlZeta2.classList.add("notshowed");
   xlZeta3.classList.add("notshowed");
@@ -261,18 +329,7 @@ color4Section3.addEventListener("click", function(){
 /*color selection*/
 
 
-
-
-
-
-
-
-
-
-
 /*specification*/
-
-let i = document.querySelectorAll(".container-arrow").length;
 
 const spec1 = document.querySelectorAll(".container-arrow")[0];
 const spec2 = document.querySelectorAll(".container-arrow")[1];

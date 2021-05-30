@@ -2,13 +2,6 @@
 
 
 /*for sidebar*/
-/*function openNav() {
-
-}
-
-function closeNav() {
-
-}*/
 
 const sidebarContent = document.querySelector(".sidebar-content");
 
