@@ -113,20 +113,48 @@ body {
 
 .booking-car-button {
   flex-basis: 45%;
-  padding: 1rem 0;
+  padding: 0.8rem 0;
   color: white;
   background-color: rgba(22, 60, 128, 1);
   border: none;
-  letter-spacing: 3px;
   max-width: 600px;
   cursor: pointer;
+  font-size: 14px;
+  font-style: normal;
   font-weight: 600;
+  line-height: 17px;
+  letter-spacing: 0em;
 }
 
 .whatsapp, .credit-card {
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 12px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  cursor: pointer;
+}
+
+.whatsapp-logo{
+  background: rgba(27, 215, 65, 1);
+  padding:0.5rem;
+  border-radius:50%;
+  color: white;
+  font-size: 1rem;
+}
+
+.credit-card-logo{
+  background: rgba(232, 243, 255, 1);
+  border-radius:50%;
+  padding:1rem;
+}
+
+.whatsapp p, .credit-card p {
+  margin-bottom: 0;
 }
 
 /*booking car container*/
@@ -179,6 +207,28 @@ body {
 
 .XL7-banner {
   width: 100%;
+}
+
+.swiper-pagination {
+  width: auto !important;
+  left: 44% !important;
+  bottom: 2rem !important;
+  background: rgba(0, 0, 0, 0.5) !important;
+  border-radius: 4px !important;
+}
+
+.swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  left: 8px;
+  top: 6px;
+  border: 1px solid #FFFFFF;
+  box-sizing: border-box;
+  opacity: 1 !important;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #FFFFFF;
 }
 
 .banner-description {
@@ -395,7 +445,6 @@ body {
   width: 100%;
 }
 
-
 .exterior-row-2, .exterior-row-3, .interior-row-2, .interior-row-3 {
   display: flex;
 }
@@ -513,7 +562,7 @@ body {
 .specification1, .specification2, .specification3, .specification4, .specification5, .specification6 {
   margin: 2rem 0;
   background-color: #F1F5F6;
-  ;
+  cursor: pointer;
 }
 
 .specification1 h3, .specification2 h3, .specification3 h3, .specification4 h3, .specification5 h3, .specification6 h3 {
@@ -535,11 +584,18 @@ body {
 }
 
 .dimension-table, .machine-table, .transmission-table, .weight-table, .foundation-table, .capacity-table {
-  margin: 1.5rem auto;
   font-size: 1rem;
-  width: 90%;
   line-height: 33px;
 }
+
+.dimension, .machine, .transmission, .weight, .foundation, .capacity{
+  width: 99%;
+  margin: 1rem auto;
+  background-color: white;
+  border-radius: 4px 4px 0px 0px;
+
+}
+
 
 .gear-table {
   line-height: 33px;
@@ -595,6 +651,14 @@ body {
   color: #163C80;
 }
 
+.price-button:hover{
+  color: white;
+  border: 2px solid #163C80;
+  background-color:#163C80;
+  transition: background-color 0.3s ease;
+}
+
+
 /*price list*/
 .copyright {
   position: relative;
@@ -609,14 +673,16 @@ body {
     margin: 0 auto;
   }
 
+  /*booking car form*/
+  .booking-car-form {
+    top: 11rem;
+  }
+
+  .whatsapp, .credit-card {
+    font-size: 0.85rem;
+  }
 
   /*booking car form*/
-.booking-car-form{
-  top: 11rem;
-}
-
-  /*booking car form*/
-
   /*navbar*/
   .car-name {
     padding: 0;
@@ -640,12 +706,12 @@ body {
     margin: 1rem;
   }
 
-  .overview-brochure{
+  .overview-brochure {
     width: 11rem;
     height: 3rem;
   }
 
-  .overview-price{
+  .overview-price {
     height: 3rem;
   }
 
@@ -708,6 +774,8 @@ body {
     font-size: 1.3rem;
     padding: 1rem;
     margin-bottom: 3rem;
+    width: 18rem;
+    height: 4rem;
   }
 
   /*price list*/

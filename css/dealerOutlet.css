@@ -29,6 +29,24 @@
   letter-spacing: 0.02em;
 }
 
+
+.whatsapp-logo{
+  font-size:1.5rem;
+  background: rgba(27, 215, 65, 1);
+  padding: 0.5rem;
+  border-radius:50%;
+  color: #FFFFFF;
+}
+
+.price-tag-logo, .service-booking-logo, .credit-card-logo{
+  font-size: 1.5rem;
+  color: rgba(46, 88, 255, 1);
+  background: rgba(232, 243, 255, 1);
+  padding: 0.5rem;
+  border-radius:50%;
+
+}
+
 /*booking container*/
 .slide-image-container {
   text-align: center;
@@ -38,6 +56,30 @@
   max-width: 450px;
   width: 100%;
 }
+
+.swiper-pagination{
+  width: auto !important;
+  left: 40% !important;
+bottom: 2rem !important;
+background: rgba(0, 0, 0, 0.5) !important;
+border-radius: 4px !important;
+}
+
+
+.swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  left: 8px;
+  top: 6px;
+  border: 1px solid #FFFFFF;
+  box-sizing: border-box;
+  opacity:1 !important;
+}
+
+.swiper-pagination-bullet-active{
+  background-color: #FFFFFF;
+}
+
 
 .slide-image {
   width: 100%;
@@ -85,7 +127,7 @@
   align-items: center;
   margin: 2rem auto;
   border-bottom: 1px solid #EEEAEA;
-  width:96%
+  width: 96%
 }
 
 .car-description, .car-container {
@@ -244,6 +286,8 @@
   .select-car, .service-order, .service-sparepart {
     max-width: 450px;
   }
+
+
 
   /*car selection*/
   .select-car {
