@@ -4,49 +4,51 @@
   margin: 0 auto;
   background-color: rgba(22, 60, 128, 1);
   color: white;
-  height: 20rem;
+  height: 211px;
 }
 
 .big-title-header {
   padding: 1rem;
-  font-size: 1.5rem;
+  font-size: 18px;
+  position: relative;
+  top: 1.8rem;
 }
 
 /*big title*/
 /*card properties*/
 /*first section*/
 .card-collection {
-  bottom: 16rem;
+  bottom: 10rem;
   position: relative;
 }
 
 .card {
   margin: 5rem auto;
   width: 90%;
-  border-radius:8px;
-  background-color:white;
-  box-shadow: 0px 1px 19px 4px rgba(0,0,0,0.57);
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: white;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.05);
   padding-bottom: 2rem;
 }
 
 .outlet-image {
   width: 100%;
-  border-radius: 8px;
 }
 
 .outlet-description {
-  font-size: 0.8rem;
-  padding: 0.5rem;
+  font-size: 11px;
+  padding: 4px 8px;
   display: inline-block;
   border: 2px solid #1F75E1;
   background-color: rgba(31, 117, 225, 0.08);
-  border-radius: 10px;
+  border-radius: 2px;
   color: #1F75E1;
 }
 
 .outlet-header {
   font-size: 15px;
-  font-weight:700;
+  font-weight: 700;
   color: black;
 }
 
@@ -65,10 +67,13 @@
   display: block;
   max-width: 980px;
   width: 95%;
-  margin:0 auto;
-  padding: 1rem 0;
-  font-size: 1rem;
+  min-width: 304px;
+  font-weight: 600px;
+  margin: 0 auto;
+  padding: 13px 69px;
+  font-size: 14px;
   background-color: white;
+  box-sizing: border-box;
   border: 2px solid #163C80;
   color: #163C80;
   cursor: pointer;
@@ -90,13 +95,22 @@
   position: relative;
   bottom: 13rem;
   z-index: -1;
-  height:87rem;
+  height: 87rem;
   margin-bottom: 8rem;
 }
 
 .information-configuration {
   padding: 2rem;
-  font-size: 1rem;
+}
+
+.information-header {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.information-description {
+  font-size: 13px;
+  font-weight: 400;
 }
 
 .news-image {
@@ -108,15 +122,16 @@
   margin: 0 auto;
   text-align: center;
   position: relative;
-  bottom: 20rem;
+  bottom: 12rem;
 }
 
 .news {
-  margin: 5rem 0;
+  margin: 3rem 0;
   background-color: white;
   padding-bottom: 2rem;
   border-radius: 8px;
-  box-shadow: 0px 1px 19px 4px rgba(0,0,0,0.57);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.05);
+  overflow: hidden
 }
 
 .news-description {
@@ -126,12 +141,18 @@
   font-weight: 700;
 }
 
-.news-date{
-  font-size: 0.75rem;
+.news-date {
   color: rgba(132, 146, 166, 1);
-  font-weight: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
 }
 
+.news-header {
+  font-size: 15px;
+  line-height: 19px;
+  letter-spacing: 0.02em;
+}
 
 .news-button {
   font-size: 1rem;
@@ -204,8 +225,8 @@
 
   /*card configuration*/
   /*news configuration*/
-  .information{
-    height:auto;
+  .information {
+    height: auto;
   }
 
   .information-configuration {
@@ -216,8 +237,6 @@
   .news-list {
     bottom: 14rem;
   }
-
-
 
   .news-description {
     font-size: 1rem;

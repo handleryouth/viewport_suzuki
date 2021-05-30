@@ -157,19 +157,30 @@ body {
 }
 
 .address-header {
-  font-size: 2.3rem;
+font-size: 16px;
+font-weight: 700;
+line-height: 26px;
+letter-spacing: 0.02em;
+text-align: center;
+
 }
 
 .address-link {
-  font-size: 1rem;
   text-decoration: none;
   color: black;
   margin: 0 0.4rem;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 23px;
+  letter-spacing: 0.02em;
+  text-align: center;
+
 }
 
 .main-address {
   text-align: center;
-  margin: 3rem auto;
+  margin: 3rem auto 1rem auto;
   width: 95%;
   border-top: 1px solid gray;
   border-bottom: 1px solid gray;
@@ -178,29 +189,63 @@ body {
 
 .address-description {
   width: 93%;
-  margin: 2rem auto;
-  font-size: 1.1rem;
+  margin:0 auto;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0.02em;
 }
+
+.address-description2{
+  width: 93%;
+  margin:0 auto;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0.02em;
+}
+
 
 .address-btn {
   display: flex;
   flex-direction: column;
-  width: 60%;
-  margin: 0 auto;
+  width: 80%;
+  margin: 1rem auto;
+  position: relative;
 }
 
 .address-button {
-  font-size: 1rem;
-  padding: 1.3rem 0;
-  margin: 1rem 0;
-  cursor: pointer;
+  height: 46px;
+  width: 209px;
+  left: 83px;
+  top: 4906px;
+  border-radius: 2px;
+  padding: 13px, 20px, 13px, 20px;
+  box-sizing: border-box;
 }
 
 .google-maps {
   color: #163C80;
   border: 2px solid #163C80;
-  font-weight: 600;
   background: white;
+
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+.pin-map, .telp-icon{
+  position: relative;
+}
+
+.pin-map{
+  right: 1rem;
+}
+
+.telp-icon{
+  right: 2.4rem;
 }
 
 .google-maps:hover {
@@ -220,8 +265,18 @@ body {
   text-align: center;
 }
 
+.hotline-header{
+font-size: 16px;
+font-weight: 700;
+line-height: 26px;
+letter-spacing: 0.02em;
+text-align: center;
+
+}
+
 .hotline-image, .hotline-app {
-  width: 50%;
+  max-width: 151px;
+  width: 100%;
   margin: 2rem auto;
 }
 
@@ -237,6 +292,11 @@ body {
   padding: 3rem 0 10rem 0;
   background-color: rgba(22, 60, 128, 1);
   color: white;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0.02em;
+
 }
 
 /*copyright*/
@@ -251,6 +311,7 @@ body {
 
   .address-button {
     font-size: 0.9rem;
+    min-width:209px;
     width: 50%;
     max-width: 400px;
   }
